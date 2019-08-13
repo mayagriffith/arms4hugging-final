@@ -1,0 +1,65 @@
+body{ font-family: "bariol", Helvetica, Arial, sans-serif;
+background-color:coral;
+}
+
+.button{text-decoration: none;
+font-weight: bold;
+color: black;
+padding: 15px;
+font-size: 15px;
+position: sticky;
+
+}
+table{width:100%;
+
+}
+
+td{
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+}
+
+.button:hover{color:rgba(255, 0, 76, 0.747);}
+
+.buttondrop {
+  font-weight: bold;
+  background-color: rgb(255, 223, 211);
+  color: black;
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+}
+
+.buttondrop:hover{color:rgba(255, 0, 76, 0.747);}
+
+.buttondrop {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+color: orange;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load static %}
+		<!-- <link href='{% static 'polls/howto.css' %}' rel="stylesheet" type="text/css" /> -->
+	 	<script src="{% static 'polls/howto.js' %}"></script>
+	  <title> How to survive a shooting </title>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	</head>
+  <body>
+		<table>
+			<tr>
+				<td> <a class="button" href="/polls">Home. </a> </td>
+
+				<td><a class="button" href="/polls/action">Take Action. </a></td>
+
+				<td>
+					<div class="dropdown">
+						<button class="buttondrop">Know the Facts.</button>
+							<div class="dropdown-content">
+							<a href="/polls/quickfacts">Quick Facts</a>
+							<a href="/polls/howto">How to survive a Mass Shooting</a>
+							 </div>
+						</div>
+				</td>
+
+					 <td><a class='button' href="/polls/about">About Us.</a>
+					</td>
+					<td><a class='button' href="/polls/questions">Polls.</a></td>
+				</tr>
+
+				</table>
+      <h1> How to Prepare</h1>
+     <div class="slide" id="slide1">
+
+
+<ul>
+    <p> Mass shootings are all too common in the United States. Use this guide in case you are stuck in a situation in which an active shooter is in your presence. </p><br>
+  <b><center> Tip: Always be aware of emergency exits around you</center> </b>
+</ul>
+
+      </div>
+    <div class="slide" id="slide2">
+      <div class="title"><h2><b>RUN</b><br><br></h2>
+      <p>Away from the shooter. Try and run in a zigzagging pattern to reduce the chance of being shot if targeted at and try and blend into the crowd if there is one.<p></div>
+
+
+    </div>
+    <div class="slide" id="slide3">
+      <div class="title"> <h2><b> Don't think</b><br></h2>
+      <p> Remember, your life is in danger. Don't take time to gather your stuff or pause for a second to get your thoughts together. Get out of there!</p>
+    </div>
+
+        </div>
+    <div class="slide" id="slide4">
+			<ul>
+       <div class="title"><h2><b> Try and save others</b><br></h2></div>
+      <p> While trying to escape, bring others along that do not know what to do or are not attempting to escape. You may save a life, and traveling to safety with a group is infinetely safer than going alone.</p>
+		</ul>
+		</div>
+
+       <div class="slide" id="slide5">
+				 <ul>
+       <div class="title"><h2><b>If you can not run: hide</b><br></h2></div>
+      <p> Hide out of side, and preferably in a place that is lockable and able to barricade. Remain completely quiet until confirmed safe. </p>
+</ul>
+		</div>
+
+           <div class="slide" id="slide6">
+     <div class="title"> <h2> <b>Last resort: Attack</b><br></h2><div>
+      <p> If the shooter has burst into the room you are in, don't just stand there and wait to get shot. Do anything you can to hurt the shooter, like jumping on top of them, preferably when they are reloading. The more people that attack the shooter, the more of a chance you have of defeating them. This is only as a last resort though, if your life is in jeparody. </p>
+    </div>
+		<!-- <script>
+			window.onload = function () {
+			  var controller = new ScrollMagic.Controller();
+			  var slides = document.getElementsByClassName("slide");
+			  for(var i = 0; i < slides.length; i++) {
+			    new ScrollMagic.Scene({
+			      triggerElement: slides[i],
+			      triggerHook: "onLeave",
+			    })
+			    .setPin(slides[i])
+			    .addTo(controller);
+			  }
+			}
+		</script> -->
+		<style>
+		body{ font-family: "bariol", Helvetica, Arial, sans-serif;
+		background-color: rgb(255, 223, 211);
+		}
+
+		.button{text-decoration: none;
+		font-weight: bold;
+		color: white;
+		padding: 15px;
+		font-size: 15px;
+		position: sticky;
+		background-color: rgb(255, 223, 211);
+		}
+
+		table{width:100%;
+		}
+
+		td{
+		  white-space: nowrap;
+		  overflow: hidden;
+		  text-align:center;
+		}
+
+		.button:hover{color:rgba(255, 0, 76, 0.747);}
+
+		.buttondrop {
+		  font-weight: bold;
+		  background-color: coral;
+		  color: white;
+		  padding: 15px;
+		  border: none;
+		  font-size: 15px;
+		  background-color: rgb(255, 223, 211);
+		}
+
+		.buttondrop:hover{color:rgba(255, 0, 76, 0.747);}
+
+		.buttondrop {
+		  position: relative;
+		  display: inline-block;
+		}
+
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: white;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		  color: black;
+		  padding: 15px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		a{
+			color:white;
+		}
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ddd;
+		color: orange;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		.slide {
+		  display: flex;
+		  justify-content: center; /* horizonal center  may need to readd*/
+		  align-items: center;  /* vertical center */
+		  height: 100vh;  /* vh = 1% of the height of the viewport */
+		  margin-top: 30px
+		}
+		p{justify-content: center;/* horizonal center  may need to readd*/
+		align-items: center;  /* vertical center */
+		text-align:center;
+		}
+		.slide b {  /* any <b> element inside of an element with class "slide" */
+		  font-family: sans-serif;
+		  font-size: 60px;
+		  color: white;
+		  text-align:center;
+		}
+
+		.slide img {  /* any <img> element inside of an element with class "slide" */
+		  height: 50vh;
+		  padding-left: 20px;
+		}
+		h2{vertical-align:top;}
+
+		#slide1 {
+		  background:pink;
+		  font-size: 30px;
+		}
+
+		#slide2 {
+		  background: rgb(255, 161, 127);
+		  font-size: 30px;
+
+		}
+
+		#slide3 {
+		  background: orange;
+		      font-size: 30px;
+
+		}
+
+		#slide4 {
+		  background: coral;
+		      font-size: 30px;
+
+		}
+
+		#slide5 {
+		  background: orange;
+		  font-size: 30px;
+		}
+
+		h1{text-align:center;
+		font-size: 60px;
+		background-color: rgb(255, 223, 211);
+		}
+
+
+		#slide6 {
+		  background: rgb(255, 203, 184);
+		      font-size: 30px;
+		}
+
+		.title{justify-content: center;/* horizonal center  may need to readd*/
+		align-items: flex-start;  /* vertical center */
+		text-align:center}
+
+		</style>
+  </body>
+  </html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+    <title>Quick Facts | Arms Are 4 Hugging</title>
+  </head>
+  <body>
+		<table>
+			<tr>
+				<td> <a class="button" href="/polls">Home. </a> </td>
+
+				<td><a class="button" href="/polls/action">Take Action. </a></td>
+
+				<td>
+					<div class="dropdown">
+						<button class="buttondrop">Know the Facts.</button>
+							<div class="dropdown-content">
+							<a href="/polls/quickfacts">Quick Facts</a>
+							<a href="/polls/howto">How to survive a Mass Shooting</a>
+							 </div>
+						</div>
+				</td>
+
+					 <td><a class='button' href="/polls/about">About Us.</a>
+					</td>
+					<td><a class='button' href="/polls/questions">Polls.</a></td>
+				</tr>
+
+				</table>
+    <div class="slide" id=slide1>
+			<ul>
+    <center>  <h2>As of August 12th, there have been: </h2><br></center>
+
+        <p><strong>257 mass shootings<sup><a href="#src1" class="nohyperlink">1</a></sup> in 2019.</strong> August 12th is 224th Day of the Year, meaning there have been more shootings than days in the year.<sup><strong><a href="#src2" class="nohyperlink">2</a></strong></sup></p>
+        <p><strong>34,306 gun incidents </strong>in 2019.<sup><strong><a href="#src2" class="nohyperlink">2</a></strong></sup></p>
+        <p><strong>9,083 lives taken.<sup><a href="#src2" class="nohyperlink">2</a></sup></strong></p>
+        <p><strong>18,015 injuries<sup><a href="#src2" class="nohyperlink">2</a></sup></strong> as a result of gun violence.</p>
+      </ul>
+    </div>
+    <div class="slide" id=slide2>
+			<ul>
+      <p><strong>100 Americans die</strong> by gun violence every day, with hundreds more being shot and injured.<strong><sup><a href="#src3" class="nohyperlink">3</a></sup></strong></p><br>
+      <p>Every year, nearly <strong>1,700 children / teens</strong> die by gun homicide. For those under 13, domestic or family violence are most frequently the cause of gun homocides.<sup><strong><a href="#src3" class="nohyperlink">3</a></strong></sup></p><br>
+      <p>As of April 4, 2019, approximately <strong>three million American children</strong> are witnesses of gun violence every year.<sup><strong><a href="#src3" class="nohyperlink">3</a></strong></sup></p><br>
+</ul>
+	  </div>
+    <div class="slide" id=slide3>
+      <iframe src="https://www.thetrace.org/features/gun-violence-interactive-shootings-map/" height="550px" width="700px" align="center"></iframe>
+    </div>
+		<div class="slide" id=slide4>
+			<ul>
+			<h2> Sources </h2>
+			<p class="sources" id="src1"><sup>1</sup><em>A mass shooting is defined by the </em>Gun Violence Archive (GVA)<em> as any incident where at least four people were shot, not including the shooter.</em></p><br>
+			<p class="sources" id="src2"><sup>2</sup><em>“Gun Violence Archive.” <em>Gun Violence Archive</em>, <a href="www.gunviolencearchive.org/">www.gunviolencearchive.org/</a></p><br>
+			<p class="sources" id="src3"><sup>3</sup>“Gun Violence in America.” <em>EverytownResearch.org</em>, 10 July 2019, <a href="https://everytownresearch.org/gun-violence-america/">www.everytownresearch.org/gun-violence-america/.</a></p><br>
+</ul>
+		</div>
+
+
+<style>
+body{ font-family: "bariol", Helvetica, Arial, sans-serif;
+background-color: rgb(255, 223, 211);
+
+}
+
+h2{float: top
+	justify-content: center;/* horizonal center  may need to readd*/
+	align-items: center;  /* vertical center */
+	/*text-align:center;*/
+	vertical-align:top;}
+.sources {
+  font-size: 11px;
+	float: bottom;
+}
+a{color: white;
+text-decoration: none;}
+.nohyperlink {
+  text-decoration: none;
+}
+
+iframe {
+  text-align: center;
+}
+
+.button{text-decoration: none;
+font-weight: bold;
+color: white;
+padding: 15px;
+font-size: 15px;
+position: sticky;
+background-color: rgb(255, 223, 211);
+}
+
+table{width:100%;
+}
+
+td{
+  white-space: nowrap;
+  overflow: hidden;
+  text-align:center;
+  color:white;
+  background-color: rgb(255, 223, 211);
+}
+
+.button:hover{color:rgba(255, 0, 76, 0.747);}
+
+.buttondrop {
+  font-weight: bold;
+  color: white;
+  padding: 15px;
+  border: none;
+  font-size: 15px;
+  background-color: rgb(255, 223, 211);
+}
+
+.buttondrop:hover{color:rgba(255, 0, 76, 0.747);}
+
+.buttondrop {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;
+color: orange;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.slide {
+  display: flex;
+  justify-content: center; /* horizonal center  may need to readd*/
+	align-items: center;  /* vertical center */
+  height: 100vh;  /* vh = 1% of the height of the viewport */
+  margin-top: 30px
+}
+p{justify-content: center;/* horizonal center  may need to readd*/
+align-items: center;  /* vertical center */
+text-align:center;
+} */
+.slide b {  /* any <b> element inside of an element with class "slide" */
+  font-family: sans-serif;
+  font-size: 60px;
+  color: white;
+  /*text-align:center;*/
+}
+
+.slide img {  /* any <img> element inside of an element with class "slide" */
+  height: 50vh;
+  padding-left: 20px;
+}
+h2{vertical-align:top;}
+
+#slide1 {
+  background: pink;
+  font-size: 30px;
+}
+
+#slide2 {
+  background: rgb(255, 161, 127);
+  font-size: 30px;
+
+}
+
+#slide3 {
+  background: lightcoral;
+      font-size: 30px;
+
+}
+
+#slide4{background:orange;}
+
+
+h1{text-align:center;
+font-size: 60px;
+background-color: rgb(255, 222, 212);
+}
+
+
+
+.title{justify-content: center;/* horizonal center  may need to readd*/
+align-items: flex-start;  /* vertical center */
+text-align:center}
+
+</style>
+<script>
+window.onload = function () {
+  var controller = new ScrollMagic.Controller();
+  var slides = document.getElementsByClassName("slide");
+  for(var i = 0; i < slides.length; i++) {
+    new ScrollMagic.Scene({
+      triggerElement: slides[i],
+      triggerHook: "onLeave",
+    })
+    .setPin(slides[i])
+    .addTo(controller);
+  }
+}
+
+</script>
+	</body>
+	</html>
