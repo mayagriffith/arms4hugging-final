@@ -31,7 +31,6 @@ def results(request, question_id):
 
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    print(request.POST)
     num_selected = 0
     for post_key, post_value in request.POST.items():
         if post_key.startswith("choice"):
