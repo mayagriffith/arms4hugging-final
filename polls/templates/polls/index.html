@@ -88,16 +88,23 @@
 
 
 
-          <div class="slide" id="slide1">
-          <p> There are <b>101</b><br> guns for every <b>100</b> <br> people in the US</p>
+        <div class="slide" id="slide1">
+          <p> There are <b>101</b><br> guns for every <b>100</b> <br> people in the US <sup><strong><a href="#src1" class="nohyperlink">1</a></strong></sup></p>
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Household_gun_ownership_vs_Homicide_rate_2000-2001.png">
         </div>
         <div class="slide" id="slide2">
-          <p>The United States had <b> 251 </b> mass shootings during the first <b> 216 </b> days of <b> 2019 </b><br>That is more shootings than days.
-
+          <p>The United States had <b> 251 </b> mass shootings during the first <b> 216 </b> days of <b> 2019 </b><br>That is more shootings than days.<sup><strong><a href="#src2" class="nohyperlink">2</a></strong></sup></p>
         </div>
         <div class="slide" id="slide3">
-          <p>Mass shootings have<b> tripled </b>in frequency in recent years</p>
+          <p>Mass shootings have<b> tripled </b>in frequency in recent years.<sup><strong><a href="#src3" class="nohyperlink">3</a></strong></sup></p>
+        </div>
+        <div class="slide" id="slide4">
+          <ul>
+          <h2>Sources</h2>
+          <p class="sources" id="src1"><sup>1</sup><em></em>“Countries With the Highest Rate of Gun Ownership.” WorldAtlas, <a href="https://www.worldatlas.com/articles/countries-with-the-highest-rate-of-gun-ownership.html.">https://www.worldatlas.com/articles/countries-with-the-highest-rate-of-gun-ownership.html.</a></p><br>
+    			<p class="sources" id="src2"><sup>2</sup><em>“El Paso, Dayton Make 251 Mass Shootings in the US in 216 Days, More Shootings than Days in the Year.” USA Today <a href="https://www.usatoday.com/story/news/nation/2019/08/03/el-paso-walmart-shooting-250th-mass-shooting-this-year/1913486001/.">https://www.usatoday.com/story/news/nation/2019/08/03/el-paso-walmart-shooting-250th-mass-shooting-this-year/1913486001/.</a></p><br>
+    			<p class="sources" id="src3"><sup>3</sup>“Here Are the Unavoidable Facts about Mass Shootings in America. Denying Them Cannot Be an Option.” Mother Jones, <a href="https://www.motherjones.com/crime-justice/2019/08/mass-shootings-in-america-the-unavoidable-facts/.">https://www.motherjones.com/crime-justice/2019/08/mass-shootings-in-america-the-unavoidable-facts/.</a></p><br>
+        </ul>
         </div>
 
 
@@ -115,6 +122,8 @@ font-size: 15px;
 position: sticky;
 
 }
+
+a{color:white}
 
 table{width:100%;
 
@@ -322,6 +331,12 @@ padding-left: 100px;
   text-align: left;
 }
 
+#slide4 {
+  background: pink;
+  font-size: 30px;
+  text-align: left;
+}
+
 #scrollToTopButton {
   position: fixed;
   bottom: 40px;
@@ -350,6 +365,16 @@ padding-left: 100px;
 }
 .fa-arrow-up:before {
     content: "\f062";
+}
+
+h2{float: top;
+	justify-content: center;/* horizonal center  may need to readd*/
+	align-items: center;  /* vertical center */
+	/*text-align:center;*/
+	vertical-align:top;}
+.sources {
+  font-size: 11px;
+	float: bottom;
 }
 
 </style>
